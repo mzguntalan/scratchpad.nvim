@@ -92,7 +92,7 @@ function M.toggle_checkbox()
     end
 end
 
-function M.setup(opts)
+M.setup = function(opts)
     M.config = vim.tbl_deep_extend('force', M.config, opts or {})
     vim.keymap.set('n', M.config.keymap.toggle, M.toggle_scratchpad, { noremap = true, silent = true })
     vim.keymap.set('n', M.config.keymap.done_undone, M.toggle_checkbox, { noremap = true, silent = true })
