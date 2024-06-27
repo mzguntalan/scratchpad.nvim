@@ -2,6 +2,8 @@
 
 Have a handy scratchpad contained within a floating window and saved at `.scratchpad.md` on the root of your directory. Use it for taking notes or a todo.
 
+[![Demo Scratchpad](https://github.com/mzguntalan/scratchpad.nvim/blob/main/demo.gif?raw=true)](https://github.com/mzguntalan/scratchpad.nvim/blob/main/demo.gif)
+
 ## Installation
 
 Packer
