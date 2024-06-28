@@ -55,6 +55,10 @@ local function close_scratchpad()
         vim.fn.writefile(lines, M.config.file_path)
         vim.api.nvim_win_close(scratchpad_win, true)
         scratchpad_win = nil
+
+        if vim.api.nvim_buf_is_valid(scratchpad_buf) then
+            vim.api.nvim_buf_delete(scratchpad_buf, {force = true})
+        end
     end
 end
 
